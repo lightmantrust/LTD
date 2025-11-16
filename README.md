@@ -1,4 +1,4 @@
-# LIGHTMANDIGITALTRUST
+# LDT
 multi-agent AI system architecture for building your 100% digital "Lightman Trust" corporation. This system will simulate a full professional team working in coordination.  LIGHTMAN DIGITAL CORPORATION
 🏛️ LIGHTMAN TRUST MANAGEMENT PLATFORM
 
