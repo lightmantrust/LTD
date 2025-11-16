@@ -1,0 +1,5 @@
+Contact: security@lightman-trust.io
+Expires: 2026-11-16T00:00:00.000Z
+Encryption: https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xPSIRT123
+Acknowledgments: https://github.com/lightmantrust/LIGHTMAN-DIGITAL-TRUST/security/advisories
+Policy: https://github.com/lightmantrust/LIGHTMAN-DIGITAL-TRUST/blob/main/SECURITY.md
