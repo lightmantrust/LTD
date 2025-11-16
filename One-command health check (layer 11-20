@@ -1,0 +1,3 @@
+docker run --rm -e REPO=lightmantrust/LIGHTMAN-DIGITAL-TRUST \
+  ghcr.io/ossf/scorecard-attest:latest --local . \
+  --checks=Spec,CI-Attest,Repro,Hermetic,Secrets,GDPR,TokenEco
