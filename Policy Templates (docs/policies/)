@@ -1,0 +1,68 @@
+a) CODE_OF_ETHICS.md
+
+# Code of Ethics – LTD Platform
+
+## Principles
+1. Integrity: All agents and contributors operate with honesty.
+2. Accountability: Changes and decisions are traceable.
+3. Confidentiality: Sensitive data must be protected at all times.
+4. Compliance: Adhere to applicable laws, regulations, and internal protocols.
+5. Excellence: Maintain high standards of quality, testing, and documentation.
+
+## Enforcement
+- Violations reported to Governance Committee.
+- Automated logging and audits ensure compliance.
+
+b) GOVERNANCE_QUICK_VOTE.md
+
+# Governance Quick Vote – LTD Platform
+
+## Purpose
+Facilitate rapid decision-making for operational, compliance, or technical changes.
+
+## Procedure
+1. Issue proposal via GitHub issue or internal system.
+2. Notify all voting members.
+3. Voting window: 24 hours for critical, 72 hours for standard changes.
+4. Decision threshold: ≥70% approval (critical), ≥60% approval (standard).
+5. Results logged in `docs/policies/GOVERNANCE_LOG.md`.
+
+## Post-Approval
+- Approved changes merged into `develop` branch.
+- Deployment scripts updated if necessary.
+
+c) DISASTER_RECOVERY.md
+
+# Disaster Recovery – LTD Platform
+
+## Objective
+Ensure continuity of operations in case of system failure, data breach, or infrastructure outage.
+
+## Recovery Procedures
+1. **Incident Detection**
+   - CI/CD pipeline and monitoring scripts alert the team.
+2. **Containment**
+   - Isolate affected modules.
+   - Revert to last stable Docker image.
+3. **Recovery**
+   - Restore databases from automated backups.
+   - Redeploy services via `scripts/deploy.sh`.
+4. **Post-Mortem**
+   - Document incident, root cause, and mitigation steps in `docs/policies/INCIDENT_LOG.md`.
+
+## Backup & Retention
+- Daily automated backups
+- Retention: 90 days for operational logs, 1 year for critical data
+
+
+---
+
+✅ Outcome
+
+Security layer is fully mapped: contacts, responsible disclosure, and response times.
+
+Governance protocols enable rapid, documented decision-making.
+
+Disaster recovery procedures are automated and clearly documented.
+
+Enterprise compliance-ready: ensures auditability, traceability, and operational resilience.
