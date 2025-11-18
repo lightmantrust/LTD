@@ -1,0 +1,10 @@
+#!/bin/bash
+# Run automated security scans
+
+echo "Running Bandit security scan..."
+bandit -r ai-agents backend frontend -ll
+
+echo "Checking dependencies with Safety..."
+safety check -r requirements.txt
+
+echo "Security audit completed!"
