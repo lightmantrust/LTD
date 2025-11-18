@@ -13,3 +13,23 @@ examples/
 ├─ run_simulation.py
 ├─ sample_tasks.json
 └─ README.md
+
+
+
+---
+
+## 3. run_orchestrator.py
+
+```python
+from ai_agents.orchestrator.example_agent import ExampleAgent
+import json
+
+# Load example tasks
+with open("examples/sample_tasks.json") as f:
+    tasks = json.load(f)
+
+agent = ExampleAgent(name="OrchestratorAgent")
+
+for task in tasks["tasks"]:
+    result = agent.run_task(task)
+    print(result)
