@@ -1,0 +1,22 @@
+class ExampleAgent:
+    """
+    Example AI Agent template for LTD Orchestrator
+    """
+
+    def __init__(self, name="ExampleAgent"):
+        self.name = name
+        self.status = "idle"
+
+    def run_task(self, task_input):
+        self.status = "running"
+        print(f"{self.name} processing task: {task_input}")
+        # Placeholder for AI logic
+        result = f"Processed: {task_input}"
+        self.status = "idle"
+        return result
+
+# Example usage
+if __name__ == "__main__":
+    agent = ExampleAgent()
+    output = agent.run_task("Test Simulation")
+    print(output)
